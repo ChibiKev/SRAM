@@ -1,0 +1,33 @@
+Quartus II Archive log --	C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM_tmp_archive.qarlog
+
+Archive:	C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM_tmp_archive.qar
+Date:		Sat Mar 02 00:21:39 2019
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x1SRAM.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM.qpf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM.qsf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAMWaveform.vwf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_Control_SR-Latch.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_Control_SR-LatchWaveform.vwf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_D-Latch.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_D-LatchWaveform.vwf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_Decode4to16.vhd
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_SR-Latch.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_SR-LatchWaveform.vwf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_SRAM.bdf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/db/Chen_Kevin_16x4SRAM.sim.vwf
+C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/incremental_db/compiled_partitions/Chen_Kevin_16x4SRAM.db_info
+c:/users/kille/desktop/altera/quartus/bin64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Mar 02 00:21:41 2019
+Source archive file:	C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x4 SRAM/Chen_Kevin_16x4SRAM_tmp_archive.qar
+Archive was extracted into	C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/
+		 - successfully.

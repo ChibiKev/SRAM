@@ -1,0 +1,149 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 16:14:23  March 01, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Chen_Kevin_16x4SRAM_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY Chen_Kevin_16x32SRAMFinal
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:14:23  MARCH 01, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name BDF_FILE "Chen_Kevin_SR-Latch.bdf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Chen_Kevin_SR-LatchWaveform.vwf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name BDF_FILE "Chen_Kevin_Control_SR-Latch.bdf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Chen_Kevin_Control_SR-LatchWaveform.vwf"
+set_global_assignment -name BDF_FILE "Chen_Kevin_D-Latch.bdf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Chen_Kevin_D-LatchWaveform.vwf"
+set_global_assignment -name BDF_FILE Chen_Kevin_SRAM.bdf
+set_global_assignment -name BDF_FILE Chen_Kevin_16x4SRAM.bdf
+set_global_assignment -name BDF_FILE Chen_Kevin_16x1SRAM.bdf
+set_global_assignment -name VHDL_FILE Chen_Kevin_Decode4to16.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Chen_Kevin_16x4SRAMWaveform.vwf
+set_global_assignment -name VHDL_FILE Chen_Kevin_Dec_to_Hex.vhd
+set_global_assignment -name BDF_FILE Chen_Kevin_16x4SRAMFinal.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N1 -to Chen_Kevin_address[0]
+set_location_assignment PIN_P1 -to Chen_Kevin_address[1]
+set_location_assignment PIN_P2 -to Chen_Kevin_address[2]
+set_location_assignment PIN_T7 -to Chen_Kevin_address[3]
+set_location_assignment PIN_V2 -to Chen_Kevin_CS
+set_location_assignment PIN_V1 -to Chen_Kevin_OE
+set_location_assignment PIN_U4 -to Chen_Kevin_WE
+set_global_assignment -name BDF_FILE Chen_Kevin_16x32SRAM.bdf
+set_global_assignment -name BDF_FILE Chen_Kevin_16x32SRAMFinal.bdf
+set_global_assignment -name VHDL_FILE Chen_Kevin_4x8SwitchesAndKeys.vhd
+set_location_assignment PIN_AF10 -to Chen_Kevin_Segment_A0
+set_location_assignment PIN_AB12 -to Chen_Kevin_Segment_B0
+set_location_assignment PIN_AC12 -to Chen_Kevin_Segment_C0
+set_location_assignment PIN_AD11 -to Chen_Kevin_Segment_D0
+set_location_assignment PIN_AE11 -to Chen_Kevin_Segment_E0
+set_location_assignment PIN_V14 -to Chen_Kevin_Segment_F0
+set_location_assignment PIN_V13 -to Chen_Kevin_Segment_G0
+set_location_assignment PIN_V20 -to Chen_Kevin_Segment_A1
+set_location_assignment PIN_AB23 -to Chen_Kevin_Segment_A2
+set_location_assignment PIN_Y23 -to Chen_Kevin_Segment_A3
+set_location_assignment PIN_U9 -to Chen_Kevin_Segment_A4
+set_location_assignment PIN_V21 -to Chen_Kevin_Segment_B1
+set_location_assignment PIN_V22 -to Chen_Kevin_Segment_B2
+set_location_assignment PIN_AA25 -to Chen_Kevin_Segment_B3
+set_location_assignment PIN_U1 -to Chen_Kevin_Segment_B4
+set_location_assignment PIN_W21 -to Chen_Kevin_Segment_C1
+set_location_assignment PIN_AC25 -to Chen_Kevin_Segment_C2
+set_location_assignment PIN_AA26 -to Chen_Kevin_Segment_C3
+set_location_assignment PIN_T2 -to Chen_Kevin_Segment_A5
+set_location_assignment PIN_R2 -to Chen_Kevin_Segment_A6
+set_location_assignment PIN_L3 -to Chen_Kevin_Segment_A7
+set_location_assignment PIN_P6 -to Chen_Kevin_Segment_B5
+set_location_assignment PIN_P4 -to Chen_Kevin_Segment_B6
+set_location_assignment PIN_L2 -to Chen_Kevin_Segment_B7
+set_location_assignment PIN_U2 -to Chen_Kevin_Segment_C4
+set_location_assignment PIN_P7 -to Chen_Kevin_Segment_C5
+set_location_assignment PIN_P3 -to Chen_Kevin_Segment_C6
+set_location_assignment PIN_L9 -to Chen_Kevin_Segment_C7
+set_location_assignment PIN_Y22 -to Chen_Kevin_Segment_D1
+set_location_assignment PIN_AC26 -to Chen_Kevin_Segment_D2
+set_location_assignment PIN_Y26 -to Chen_Kevin_Segment_D3
+set_location_assignment PIN_T4 -to Chen_Kevin_Segment_D4
+set_location_assignment PIN_T9 -to Chen_Kevin_Segment_D5
+set_location_assignment PIN_M2 -to Chen_Kevin_Segment_D6
+set_location_assignment PIN_L6 -to Chen_Kevin_Segment_D7
+set_location_assignment PIN_AA24 -to Chen_Kevin_Segment_E1
+set_location_assignment PIN_AB26 -to Chen_Kevin_Segment_E2
+set_location_assignment PIN_Y25 -to Chen_Kevin_Segment_E3
+set_location_assignment PIN_R7 -to Chen_Kevin_Segment_E4
+set_location_assignment PIN_R5 -to Chen_Kevin_Segment_E5
+set_location_assignment PIN_M3 -to Chen_Kevin_Segment_E6
+set_location_assignment PIN_L7 -to Chen_Kevin_Segment_E7
+set_location_assignment PIN_AA23 -to Chen_Kevin_Segment_F1
+set_location_assignment PIN_AB25 -to Chen_Kevin_Segment_F2
+set_location_assignment PIN_U22 -to Chen_Kevin_Segment_F3
+set_location_assignment PIN_R6 -to Chen_Kevin_Segment_F4
+set_location_assignment PIN_R4 -to Chen_Kevin_Segment_F5
+set_location_assignment PIN_M5 -to Chen_Kevin_Segment_F6
+set_location_assignment PIN_P9 -to Chen_Kevin_Segment_F7
+set_location_assignment PIN_AB24 -to Chen_Kevin_Segment_G1
+set_location_assignment PIN_Y24 -to Chen_Kevin_Segment_G2
+set_location_assignment PIN_W24 -to Chen_Kevin_Segment_G3
+set_location_assignment PIN_T3 -to Chen_Kevin_Segment_G4
+set_location_assignment PIN_R3 -to Chen_Kevin_Segment_G5
+set_location_assignment PIN_M4 -to Chen_Kevin_Segment_G6
+set_location_assignment PIN_N9 -to Chen_Kevin_Segment_G7
+set_location_assignment PIN_N25 -to Chen_Kevin_Keys[0]
+set_location_assignment PIN_N26 -to Chen_Kevin_Keys[1]
+set_location_assignment PIN_P25 -to Chen_Kevin_Switches[0]
+set_location_assignment PIN_AE14 -to Chen_Kevin_Switches[1]
+set_location_assignment PIN_AF14 -to Chen_Kevin_Switches[2]
+set_location_assignment PIN_AD13 -to Chen_Kevin_Switches[3]
+set_location_assignment PIN_AC13 -to Chen_Kevin_Switches[4]
+set_location_assignment PIN_C13 -to Chen_Kevin_Switches[5]
+set_location_assignment PIN_B13 -to Chen_Kevin_Switches[6]
+set_location_assignment PIN_A13 -to Chen_Kevin_Switches[7]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Chen_Kevin_16x32SRAMWaveform.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/kille/Desktop/Chen_Kevin/Lab 2/Quartus Files/16x32 SRAM_ONLYFORPINS/Chen_Kevin_16x4SRAMWaveform.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

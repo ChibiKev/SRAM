@@ -1,0 +1,37 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Chen_Kevin_CS'
+Slack : -2.242
+TNS   : -750.243
+
+Type  : Slow Model Hold 'Chen_Kevin_CS'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Slow Model Minimum Pulse Width 'Chen_Kevin_Keys[0]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'Chen_Kevin_CS'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Fast Model Setup 'Chen_Kevin_CS'
+Slack : -0.931
+TNS   : -117.999
+
+Type  : Fast Model Hold 'Chen_Kevin_CS'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Chen_Kevin_Keys[0]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'Chen_Kevin_CS'
+Slack : -1.222
+TNS   : -1.222
+
+------------------------------------------------------------

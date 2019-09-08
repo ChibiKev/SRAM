@@ -1,0 +1,1288 @@
+TimeQuest Timing Analyzer report for Chen_Kevin_16x4SRAM
+Tue Mar 05 22:38:26 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'Chen_Kevin_CS'
+ 12. Slow Model Hold: 'Chen_Kevin_CS'
+ 13. Slow Model Minimum Pulse Width: 'Chen_Kevin_CS'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'Chen_Kevin_CS'
+ 26. Fast Model Hold: 'Chen_Kevin_CS'
+ 27. Fast Model Minimum Pulse Width: 'Chen_Kevin_CS'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Chen_Kevin_16x4SRAM                                               ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                       ;
++---------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------+
+; Clock Name    ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets           ;
++---------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------+
+; Chen_Kevin_CS ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Chen_Kevin_CS } ;
++---------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------+
+
+
++-----------------------------------------------------+
+; Slow Model Fmax Summary                             ;
++------------+-----------------+---------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name    ; Note ;
++------------+-----------------+---------------+------+
+; 346.26 MHz ; 346.26 MHz      ; Chen_Kevin_CS ;      ;
++------------+-----------------+---------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------+
+; Slow Model Setup Summary               ;
++---------------+--------+---------------+
+; Clock         ; Slack  ; End Point TNS ;
++---------------+--------+---------------+
+; Chen_Kevin_CS ; -0.944 ; -48.035       ;
++---------------+--------+---------------+
+
+
++---------------------------------------+
+; Slow Model Hold Summary               ;
++---------------+-------+---------------+
+; Clock         ; Slack ; End Point TNS ;
++---------------+-------+---------------+
+; Chen_Kevin_CS ; 0.611 ; 0.000         ;
++---------------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++---------------+--------+---------------+
+; Clock         ; Slack  ; End Point TNS ;
++---------------+--------+---------------+
+; Chen_Kevin_CS ; -1.222 ; -1.222        ;
++---------------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'Chen_Kevin_CS'                                                                                                                                                                                                                                                                        ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                 ; To Node                                                                                                    ; Launch Clock  ; Latch Clock   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; -0.944 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.124      ; 0.400      ;
+; -0.912 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.014     ; 0.408      ;
+; -0.899 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.003      ; 0.413      ;
+; -0.895 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.003     ; 0.404      ;
+; -0.875 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.004     ; 0.400      ;
+; -0.850 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.004     ; 0.400      ;
+; -0.850 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.004     ; 0.400      ;
+; -0.844 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.003     ; 0.402      ;
+; -0.843 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.007     ; 0.397      ;
+; -0.783 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~2   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.249      ; 0.402      ;
+; -0.774 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.240      ; 0.406      ;
+; -0.764 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.412      ;
+; -0.763 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.122      ; 0.402      ;
+; -0.761 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.250      ; 0.404      ;
+; -0.758 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.131      ; 0.407      ;
+; -0.757 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.247      ; 0.397      ;
+; -0.757 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.125      ; 0.400      ;
+; -0.756 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.135      ; 0.411      ;
+; -0.755 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.132      ; 0.405      ;
+; -0.754 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.134      ; 0.410      ;
+; -0.754 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.131      ; 0.403      ;
+; -0.753 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.133      ; 0.405      ;
+; -0.752 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.408      ;
+; -0.751 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.249      ; 0.397      ;
+; -0.750 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.399      ;
+; -0.748 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.136      ; 0.406      ;
+; -0.747 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.136      ; 0.405      ;
+; -0.745 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.142      ; 0.406      ;
+; -0.745 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.136      ; 0.399      ;
+; -0.739 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.129      ; 0.396      ;
+; -0.739 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.125      ; 0.410      ;
+; -0.736 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.134      ; 0.398      ;
+; -0.733 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.159      ; 0.410      ;
+; -0.732 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.141      ; 0.399      ;
+; -0.730 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.127      ; 0.408      ;
+; -0.730 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.129      ; 0.403      ;
+; -0.729 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.157      ; 0.404      ;
+; -0.728 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.126      ; 0.401      ;
+; -0.727 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.128      ; 0.405      ;
+; -0.727 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.131      ; 0.406      ;
+; -0.726 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.407      ;
+; -0.726 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.134      ; 0.411      ;
+; -0.726 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.134      ; 0.411      ;
+; -0.724 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.128      ; 0.410      ;
+; -0.723 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.129      ; 0.399      ;
+; -0.721 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.136      ; 0.408      ;
+; -0.719 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.135      ; 0.409      ;
+; -0.719 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.135      ; 0.404      ;
+; -0.717 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.140      ; 0.408      ;
+; -0.715 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.396      ;
+; -0.714 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.128      ; 0.400      ;
+; -0.714 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.129      ; 0.398      ;
+; -0.714 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.150      ; 0.411      ;
+; -0.713 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.122      ; 0.396      ;
+; -0.711 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.137      ; 0.404      ;
+; -0.710 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.127      ; 0.398      ;
+; -0.709 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.143      ; 0.408      ;
+; -0.705 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.134      ; 0.397      ;
+; -0.703 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.283      ; 0.404      ;
+; -0.699 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.151      ; 0.399      ;
+; -0.692 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.282      ; 0.393      ;
+; -0.691 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.150      ; 0.399      ;
+; -0.684 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.155      ; 0.397      ;
+; -0.571 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.247      ; 0.403      ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'Chen_Kevin_CS'                                                                                                                                                                                                                                                                        ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; Slack ; From Node                                                                                                 ; To Node                                                                                                    ; Launch Clock  ; Latch Clock   ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; 0.611 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.282      ; 0.393      ;
+; 0.621 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.283      ; 0.404      ;
+; 0.648 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.249      ; 0.397      ;
+; 0.650 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.247      ; 0.397      ;
+; 0.653 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~2   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.249      ; 0.402      ;
+; 0.654 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.250      ; 0.404      ;
+; 0.656 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.247      ; 0.403      ;
+; 0.666 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.240      ; 0.406      ;
+; 0.742 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.155      ; 0.397      ;
+; 0.747 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.157      ; 0.404      ;
+; 0.748 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.151      ; 0.399      ;
+; 0.749 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.150      ; 0.399      ;
+; 0.751 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.159      ; 0.410      ;
+; 0.758 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.141      ; 0.399      ;
+; 0.761 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.150      ; 0.411      ;
+; 0.763 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.134      ; 0.397      ;
+; 0.763 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.136      ; 0.399      ;
+; 0.764 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.142      ; 0.406      ;
+; 0.764 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.134      ; 0.398      ;
+; 0.765 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.143      ; 0.408      ;
+; 0.766 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.396      ;
+; 0.767 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.129      ; 0.396      ;
+; 0.767 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.137      ; 0.404      ;
+; 0.768 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.140      ; 0.408      ;
+; 0.769 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.399      ;
+; 0.769 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.129      ; 0.398      ;
+; 0.769 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.135      ; 0.404      ;
+; 0.769 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.136      ; 0.405      ;
+; 0.770 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.136      ; 0.406      ;
+; 0.770 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.129      ; 0.399      ;
+; 0.771 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.127      ; 0.398      ;
+; 0.772 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.128      ; 0.400      ;
+; 0.772 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.136      ; 0.408      ;
+; 0.772 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.133      ; 0.405      ;
+; 0.772 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.131      ; 0.403      ;
+; 0.773 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.132      ; 0.405      ;
+; 0.774 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.135      ; 0.409      ;
+; 0.774 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.122      ; 0.396      ;
+; 0.774 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.129      ; 0.403      ;
+; 0.775 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.126      ; 0.401      ;
+; 0.775 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.125      ; 0.400      ;
+; 0.775 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.131      ; 0.406      ;
+; 0.776 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.135      ; 0.411      ;
+; 0.776 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.134      ; 0.410      ;
+; 0.776 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.131      ; 0.407      ;
+; 0.776 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.124      ; 0.400      ;
+; 0.777 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.407      ;
+; 0.777 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.134      ; 0.411      ;
+; 0.777 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.134      ; 0.411      ;
+; 0.777 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.128      ; 0.405      ;
+; 0.778 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.408      ;
+; 0.780 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.122      ; 0.402      ;
+; 0.781 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.127      ; 0.408      ;
+; 0.782 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.412      ;
+; 0.782 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.128      ; 0.410      ;
+; 0.785 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.125      ; 0.410      ;
+; 0.904 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.004     ; 0.400      ;
+; 0.904 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.004     ; 0.400      ;
+; 0.904 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.004     ; 0.400      ;
+; 0.904 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.007     ; 0.397      ;
+; 0.905 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.003     ; 0.402      ;
+; 0.907 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.003     ; 0.404      ;
+; 0.910 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.003      ; 0.413      ;
+; 0.922 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.014     ; 0.408      ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Chen_Kevin_CS'                                                                                                                                                     ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock         ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_CS                                                                                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Setup Times                                                                            ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; 0.412  ; 0.412  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; 0.160  ; 0.160  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; 0.412  ; 0.412  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; 0.114  ; 0.114  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; -0.433 ; -0.433 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Hold Times                                                                           ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; 3.738 ; 3.738 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; 3.582 ; 3.582 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; 3.316 ; 3.316 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; 3.468 ; 3.468 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; 3.738 ; 3.738 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 12.217 ; 12.217 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 12.141 ; 12.141 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 12.129 ; 12.129 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 11.932 ; 11.932 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 11.914 ; 11.914 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 11.949 ; 11.949 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 11.896 ; 11.896 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 15.315 ; 15.315 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 15.245 ; 15.245 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 15.232 ; 15.232 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 15.033 ; 15.033 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 15.015 ; 15.015 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 15.049 ; 15.049 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 14.997 ; 14.997 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 11.909 ; 11.909 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 11.835 ; 11.835 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 11.848 ; 11.848 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 11.624 ; 11.624 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 11.604 ; 11.604 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 11.639 ; 11.639 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 11.586 ; 11.586 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 11.909 ; 11.909 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 11.835 ; 11.835 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 11.848 ; 11.848 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 11.624 ; 11.624 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 11.604 ; 11.604 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 11.639 ; 11.639 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 11.586 ; 11.586 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Propagation Delay                                                                 ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Input Port            ; Output Port           ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 12.682 ; 12.682 ; 12.682 ; 12.682 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 12.606 ; 12.606 ; 12.606 ; 12.606 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 12.594 ; 12.565 ; 12.565 ; 12.594 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 12.397 ; 12.397 ; 12.397 ; 12.397 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 12.348 ; 12.379 ; 12.379 ; 12.348 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 12.382 ; 12.414 ; 12.414 ; 12.382 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 12.361 ; 12.361 ; 12.361 ; 12.361 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 12.417 ; 12.417 ; 12.417 ; 12.417 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 12.343 ; 12.343 ; 12.343 ; 12.343 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 12.357 ; 12.325 ; 12.325 ; 12.357 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 12.132 ; 12.132 ; 12.132 ; 12.132 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 12.108 ; 12.124 ; 12.124 ; 12.108 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 12.159 ; 12.159 ; 12.159 ; 12.159 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 12.100 ; 12.100 ; 12.100 ; 12.100 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 12.408 ; 12.408 ; 12.408 ; 12.408 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 12.334 ; 12.334 ; 12.334 ; 12.334 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 12.348 ; 12.316 ; 12.316 ; 12.348 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 12.123 ; 12.123 ; 12.123 ; 12.123 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 12.099 ; 12.115 ; 12.115 ; 12.099 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 12.150 ; 12.150 ; 12.150 ; 12.150 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 12.091 ; 12.091 ; 12.091 ; 12.091 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 11.859 ; 11.859 ; 11.859 ; 11.859 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 11.785 ; 11.785 ; 11.785 ; 11.785 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 11.767 ; 11.799 ; 11.799 ; 11.767 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 11.574 ; 11.574 ; 11.574 ; 11.574 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 11.566 ; 11.550 ; 11.550 ; 11.566 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 11.601 ; 11.601 ; 11.601 ; 11.601 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 11.542 ; 11.542 ; 11.542 ; 11.542 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 12.532 ; 12.532 ; 12.532 ; 12.532 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 12.458 ; 12.458 ; 12.458 ; 12.458 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 12.440 ; 12.472 ; 12.472 ; 12.440 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 12.247 ; 12.247 ; 12.247 ; 12.247 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 12.239 ; 12.223 ; 12.223 ; 12.239 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 12.274 ; 12.274 ; 12.274 ; 12.274 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 12.215 ; 12.215 ; 12.215 ; 12.215 ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                         ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Input Port            ; Output Port           ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 12.374 ; 12.374 ; 12.374 ; 12.374 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 12.300 ; 12.300 ; 12.300 ; 12.300 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 12.313 ; 12.313 ; 12.313 ; 12.313 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 12.089 ; 12.089 ; 12.089 ; 12.089 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 12.069 ; 12.348 ; 12.348 ; 12.069 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 12.104 ; 12.104 ; 12.104 ; 12.104 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 12.051 ; 12.051 ; 12.051 ; 12.051 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 10.946 ; 10.946 ; 10.946 ; 10.946 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 10.872 ; 10.872 ; 10.872 ; 10.872 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 10.886 ; 11.004 ; 11.004 ; 10.886 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 10.661 ; 10.661 ; 10.661 ; 10.661 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 10.760 ; 10.653 ; 10.653 ; 10.760 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 10.688 ; 10.688 ; 10.688 ; 10.688 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 10.629 ; 10.629 ; 10.629 ; 10.629 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 10.978 ; 10.978 ; 10.978 ; 10.978 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 10.904 ; 10.904 ; 10.904 ; 10.904 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 10.969 ; 10.918 ; 10.918 ; 10.969 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 10.693 ; 10.693 ; 10.693 ; 10.693 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 10.685 ; 10.725 ; 10.725 ; 10.685 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 10.720 ; 10.720 ; 10.720 ; 10.720 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 10.661 ; 10.661 ; 10.661 ; 10.661 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 10.382 ; 10.382 ; 10.382 ; 10.382 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 10.308 ; 10.308 ; 10.308 ; 10.308 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 10.322 ; 10.426 ; 10.426 ; 10.322 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 10.097 ; 10.097 ; 10.097 ; 10.097 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 10.182 ; 10.089 ; 10.089 ; 10.182 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 10.124 ; 10.124 ; 10.124 ; 10.124 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 10.065 ; 10.065 ; 10.065 ; 10.065 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 11.061 ; 11.061 ; 11.061 ; 11.061 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 10.987 ; 10.987 ; 10.987 ; 10.987 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 11.001 ; 11.094 ; 11.094 ; 11.001 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 10.776 ; 10.776 ; 10.776 ; 10.776 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 10.850 ; 10.768 ; 10.768 ; 10.850 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 10.803 ; 10.803 ; 10.803 ; 10.803 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 10.744 ; 10.744 ; 10.744 ; 10.744 ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+
+
++----------------------------------------+
+; Fast Model Setup Summary               ;
++---------------+--------+---------------+
+; Clock         ; Slack  ; End Point TNS ;
++---------------+--------+---------------+
+; Chen_Kevin_CS ; -0.102 ; -1.219        ;
++---------------+--------+---------------+
+
+
++---------------------------------------+
+; Fast Model Hold Summary               ;
++---------------+-------+---------------+
+; Clock         ; Slack ; End Point TNS ;
++---------------+-------+---------------+
+; Chen_Kevin_CS ; 0.533 ; 0.000         ;
++---------------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++---------------+--------+---------------+
+; Clock         ; Slack  ; End Point TNS ;
++---------------+--------+---------------+
+; Chen_Kevin_CS ; -1.222 ; -1.222        ;
++---------------+--------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'Chen_Kevin_CS'                                                                                                                                                                                                                                                                        ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                                 ; To Node                                                                                                    ; Launch Clock  ; Latch Clock   ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; -0.102 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.049      ; 0.165      ;
+; -0.087 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.007     ; 0.171      ;
+; -0.079 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.004      ; 0.174      ;
+; -0.075 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.001      ; 0.168      ;
+; -0.061 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.000      ; 0.164      ;
+; -0.054 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; -0.002     ; 0.164      ;
+; -0.053 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.001      ; 0.165      ;
+; -0.053 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.001      ; 0.165      ;
+; -0.051 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.002      ; 0.167      ;
+; -0.033 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~2   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.119      ; 0.167      ;
+; -0.031 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.116      ; 0.169      ;
+; -0.025 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.048      ; 0.168      ;
+; -0.022 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.054      ; 0.172      ;
+; -0.022 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.171      ;
+; -0.022 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.123      ; 0.168      ;
+; -0.021 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.117      ; 0.164      ;
+; -0.020 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.056      ; 0.173      ;
+; -0.020 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.169      ;
+; -0.019 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.049      ; 0.172      ;
+; -0.019 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.172      ;
+; -0.019 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.050      ; 0.165      ;
+; -0.017 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.170      ;
+; -0.017 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.056      ; 0.169      ;
+; -0.017 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.168      ;
+; -0.017 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.170      ;
+; -0.015 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.054      ; 0.165      ;
+; -0.014 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.060      ; 0.170      ;
+; -0.014 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.057      ; 0.169      ;
+; -0.013 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.174      ;
+; -0.013 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.050      ; 0.169      ;
+; -0.013 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.119      ; 0.163      ;
+; -0.012 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.052      ; 0.170      ;
+; -0.012 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.174      ;
+; -0.012 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.049      ; 0.163      ;
+; -0.012 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.050      ; 0.172      ;
+; -0.011 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.054      ; 0.170      ;
+; -0.011 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.057      ; 0.165      ;
+; -0.010 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.165      ;
+; -0.010 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.052      ; 0.166      ;
+; -0.009 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.169      ;
+; -0.009 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.052      ; 0.167      ;
+; -0.008 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.168      ;
+; -0.007 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.057      ; 0.170      ;
+; -0.007 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.055      ; 0.171      ;
+; -0.007 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.057      ; 0.170      ;
+; -0.007 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.053      ; 0.165      ;
+; -0.006 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.071      ; 0.172      ;
+; -0.005 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.063      ; 0.172      ;
+; -0.005 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.058      ; 0.164      ;
+; -0.004 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.051      ; 0.162      ;
+; -0.004 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.068      ; 0.167      ;
+; -0.003 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.130      ; 0.167      ;
+; -0.003 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.046      ; 0.162      ;
+; -0.003 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.049      ; 0.165      ;
+; -0.002 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.052      ; 0.165      ;
+; -0.001 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.050      ; 0.163      ;
+; -0.001 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.057      ; 0.168      ;
+; 0.001  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.061      ; 0.170      ;
+; 0.001  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.054      ; 0.163      ;
+; 0.003  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.128      ; 0.161      ;
+; 0.006  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.064      ; 0.164      ;
+; 0.008  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.062      ; 0.165      ;
+; 0.013  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.065      ; 0.163      ;
+; 0.062  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; 0.500        ; 0.117      ; 0.168      ;
++--------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'Chen_Kevin_CS'                                                                                                                                                                                                                                                                        ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; Slack ; From Node                                                                                                 ; To Node                                                                                                    ; Launch Clock  ; Latch Clock   ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+; 0.533 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.128      ; 0.161      ;
+; 0.537 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.130      ; 0.167      ;
+; 0.544 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.119      ; 0.163      ;
+; 0.545 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.123      ; 0.168      ;
+; 0.547 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.117      ; 0.164      ;
+; 0.548 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~2   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.119      ; 0.167      ;
+; 0.551 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.117      ; 0.168      ;
+; 0.553 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.116      ; 0.169      ;
+; 0.598 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.065      ; 0.163      ;
+; 0.599 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.068      ; 0.167      ;
+; 0.600 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.064      ; 0.164      ;
+; 0.601 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.071      ; 0.172      ;
+; 0.603 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.062      ; 0.165      ;
+; 0.606 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.058      ; 0.164      ;
+; 0.608 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.057      ; 0.165      ;
+; 0.609 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.061      ; 0.170      ;
+; 0.609 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.063      ; 0.172      ;
+; 0.609 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.054      ; 0.163      ;
+; 0.610 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.060      ; 0.170      ;
+; 0.611 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.051      ; 0.162      ;
+; 0.611 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.054      ; 0.165      ;
+; 0.611 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.057      ; 0.168      ;
+; 0.612 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.165      ;
+; 0.612 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.165      ;
+; 0.612 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.057      ; 0.169      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1   ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.057      ; 0.170      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.052      ; 0.165      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.050      ; 0.163      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.057      ; 0.170      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.056      ; 0.169      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.168      ;
+; 0.613 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.168      ;
+; 0.614 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.049      ; 0.163      ;
+; 0.614 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.052      ; 0.166      ;
+; 0.615 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.170      ;
+; 0.615 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.050      ; 0.165      ;
+; 0.615 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.052      ; 0.167      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.171      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.169      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.169      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.046      ; 0.162      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.049      ; 0.165      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.049      ; 0.165      ;
+; 0.616 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.054      ; 0.170      ;
+; 0.617 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.170      ;
+; 0.617 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.056      ; 0.173      ;
+; 0.617 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.172      ;
+; 0.618 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.052      ; 0.170      ;
+; 0.618 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.054      ; 0.172      ;
+; 0.618 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.053      ; 0.171      ;
+; 0.619 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.174      ;
+; 0.619 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.055      ; 0.174      ;
+; 0.619 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.050      ; 0.169      ;
+; 0.620 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.048      ; 0.168      ;
+; 0.622 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.050      ; 0.172      ;
+; 0.623 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.049      ; 0.172      ;
+; 0.664 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.000      ; 0.164      ;
+; 0.664 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.001      ; 0.165      ;
+; 0.664 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.001      ; 0.165      ;
+; 0.665 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~2 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.002      ; 0.167      ;
+; 0.666 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst3|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.002     ; 0.164      ;
+; 0.667 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst4|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~2  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.001      ; 0.168      ;
+; 0.670 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; 0.004      ; 0.174      ;
+; 0.678 ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1  ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ; Chen_Kevin_CS ; Chen_Kevin_CS ; -0.500       ; -0.007     ; 0.171      ;
++-------+-----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+---------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Chen_Kevin_CS'                                                                                                                                                     ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock         ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_CS                                                                                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst4|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst5|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst6|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst7|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst8|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst9|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst1|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst1|Chen_Kevin_SRAM:inst|Chen_Kevin_D-Latch:inst|inst1~1    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst10|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst11|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst12|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst13|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst14|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst1|inst1~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst15|Chen_Kevin_D-Latch:inst|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst1|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst2|Chen_Kevin_D-Latch:inst|inst1~1   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Chen_Kevin_CS ; Fall       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst1|inst1~1  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Chen_Kevin_CS ; Rise       ; Chen_Kevin_16x4SRAM:inst|Chen_Kevin_16x1SRAM:inst2|Chen_Kevin_SRAM:inst3|Chen_Kevin_D-Latch:inst|inst1~1   ;
++--------+--------------+----------------+------------------+---------------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Setup Times                                                                            ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; -0.036 ; -0.036 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; -0.208 ; -0.208 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; -0.036 ; -0.036 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; -0.195 ; -0.195 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; -0.484 ; -0.484 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Hold Times                                                                           ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; 2.048 ; 2.048 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; 1.966 ; 1.966 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; 1.830 ; 1.830 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; 1.904 ; 1.904 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; 2.048 ; 2.048 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 6.705 ; 6.705 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 6.641 ; 6.641 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 6.655 ; 6.655 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 6.558 ; 6.558 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 6.552 ; 6.552 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 6.566 ; 6.566 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 6.531 ; 6.531 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 7.753 ; 7.753 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 7.696 ; 7.696 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 7.711 ; 7.711 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 7.610 ; 7.610 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 7.599 ; 7.599 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 7.615 ; 7.615 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 7.582 ; 7.582 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                        ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 6.571 ; 6.571 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 6.514 ; 6.514 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 6.528 ; 6.528 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 6.432 ; 6.432 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 6.418 ; 6.418 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 6.432 ; 6.432 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 6.404 ; 6.404 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 6.091 ; 6.091 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 6.034 ; 6.034 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 6.048 ; 6.048 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 5.952 ; 5.952 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 5.938 ; 5.938 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 5.952 ; 5.952 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 5.924 ; 5.924 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Propagation Delay                                                             ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Input Port            ; Output Port           ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 6.905 ; 6.905 ; 6.905 ; 6.905 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 6.841 ; 6.841 ; 6.841 ; 6.841 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 6.855 ; 6.850 ; 6.850 ; 6.855 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 6.758 ; 6.758 ; 6.758 ; 6.758 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 6.738 ; 6.752 ; 6.752 ; 6.738 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 6.754 ; 6.766 ; 6.766 ; 6.754 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 6.731 ; 6.731 ; 6.731 ; 6.731 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 6.149 ; 6.149 ; 6.149 ; 6.149 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 6.092 ; 6.091 ; 6.091 ; 6.092 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 6.107 ; 6.107 ; 6.107 ; 6.107 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 6.008 ; 6.008 ; 6.008 ; 6.008 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 5.995 ; 6.006 ; 6.006 ; 5.995 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 6.020 ; 6.020 ; 6.020 ; 6.020 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 5.989 ; 5.989 ; 5.989 ; 5.989 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 6.096 ; 6.096 ; 6.096 ; 6.096 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 6.039 ; 6.038 ; 6.038 ; 6.039 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 6.054 ; 6.054 ; 6.054 ; 6.054 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 5.955 ; 5.955 ; 5.955 ; 5.955 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 5.942 ; 5.953 ; 5.953 ; 5.942 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 5.967 ; 5.967 ; 5.967 ; 5.967 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 5.936 ; 5.936 ; 5.936 ; 5.936 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 5.834 ; 5.834 ; 5.834 ; 5.834 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 5.776 ; 5.777 ; 5.777 ; 5.776 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 5.693 ; 5.693 ; 5.693 ; 5.693 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 5.691 ; 5.680 ; 5.680 ; 5.691 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 5.705 ; 5.705 ; 5.705 ; 5.705 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 5.674 ; 5.674 ; 5.674 ; 5.674 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 6.229 ; 6.229 ; 6.229 ; 6.229 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 6.171 ; 6.172 ; 6.172 ; 6.171 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 6.187 ; 6.187 ; 6.187 ; 6.187 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 6.088 ; 6.088 ; 6.088 ; 6.088 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 6.086 ; 6.075 ; 6.075 ; 6.086 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 6.100 ; 6.100 ; 6.100 ; 6.100 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 6.069 ; 6.069 ; 6.069 ; 6.069 ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                     ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Input Port            ; Output Port           ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 6.771 ; 6.771 ; 6.771 ; 6.771 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 6.714 ; 6.714 ; 6.714 ; 6.714 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 6.728 ; 6.728 ; 6.728 ; 6.728 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 6.618 ; 6.738 ; 6.738 ; 6.618 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 6.604 ; 6.604 ; 6.604 ; 6.604 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 5.460 ; 5.460 ; 5.460 ; 5.460 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 5.403 ; 5.403 ; 5.403 ; 5.403 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 5.416 ; 5.480 ; 5.480 ; 5.416 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 5.320 ; 5.320 ; 5.320 ; 5.320 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 5.370 ; 5.318 ; 5.318 ; 5.370 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 5.332 ; 5.332 ; 5.332 ; 5.332 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 5.301 ; 5.301 ; 5.301 ; 5.301 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 5.414 ; 5.414 ; 5.414 ; 5.414 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 5.357 ; 5.357 ; 5.357 ; 5.357 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 5.417 ; 5.370 ; 5.370 ; 5.417 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 5.274 ; 5.274 ; 5.274 ; 5.274 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 5.272 ; 5.307 ; 5.307 ; 5.272 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 5.286 ; 5.286 ; 5.286 ; 5.286 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 5.255 ; 5.255 ; 5.255 ; 5.255 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 5.139 ; 5.139 ; 5.139 ; 5.139 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 5.082 ; 5.082 ; 5.082 ; 5.082 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 5.095 ; 5.159 ; 5.159 ; 5.095 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 4.999 ; 4.999 ; 4.999 ; 4.999 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 5.049 ; 4.997 ; 4.997 ; 5.049 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 4.980 ; 4.980 ; 4.980 ; 4.980 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 5.516 ; 5.516 ; 5.516 ; 5.516 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 5.459 ; 5.459 ; 5.459 ; 5.459 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 5.472 ; 5.551 ; 5.551 ; 5.472 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 5.376 ; 5.376 ; 5.376 ; 5.376 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 5.441 ; 5.374 ; 5.374 ; 5.441 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 5.388 ; 5.388 ; 5.388 ; 5.388 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 5.357 ; 5.357 ; 5.357 ; 5.357 ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.944  ; 0.533 ; N/A      ; N/A     ; -1.222              ;
+;  Chen_Kevin_CS   ; -0.944  ; 0.533 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; -48.035 ; 0.0   ; 0.0      ; 0.0     ; -1.222              ;
+;  Chen_Kevin_CS   ; -48.035 ; 0.000 ; N/A      ; N/A     ; -1.222              ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Setup Times                                                                            ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; 0.412  ; 0.412  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; 0.160  ; 0.160  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; 0.412  ; 0.412  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; 0.114  ; 0.114  ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; -0.433 ; -0.433 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Hold Times                                                                           ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_datain[*]  ; Chen_Kevin_CS ; 3.738 ; 3.738 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[0] ; Chen_Kevin_CS ; 3.582 ; 3.582 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[1] ; Chen_Kevin_CS ; 3.316 ; 3.316 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[2] ; Chen_Kevin_CS ; 3.468 ; 3.468 ; Rise       ; Chen_Kevin_CS   ;
+;  Chen_Kevin_datain[3] ; Chen_Kevin_CS ; 3.738 ; 3.738 ; Rise       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 12.217 ; 12.217 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 12.141 ; 12.141 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 12.129 ; 12.129 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 11.932 ; 11.932 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 11.914 ; 11.914 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 11.949 ; 11.949 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 11.896 ; 11.896 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 15.315 ; 15.315 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 15.245 ; 15.245 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 15.232 ; 15.232 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 15.033 ; 15.033 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 15.015 ; 15.015 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 15.049 ; 15.049 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 14.997 ; 14.997 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                        ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Data Port             ; Clock Port    ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 6.571 ; 6.571 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 6.514 ; 6.514 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 6.528 ; 6.528 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 6.432 ; 6.432 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 6.418 ; 6.418 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 6.432 ; 6.432 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 6.404 ; 6.404 ; Rise       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_A0 ; Chen_Kevin_CS ; 6.091 ; 6.091 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_B0 ; Chen_Kevin_CS ; 6.034 ; 6.034 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_C0 ; Chen_Kevin_CS ; 6.048 ; 6.048 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_D0 ; Chen_Kevin_CS ; 5.952 ; 5.952 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_E0 ; Chen_Kevin_CS ; 5.938 ; 5.938 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_F0 ; Chen_Kevin_CS ; 5.952 ; 5.952 ; Fall       ; Chen_Kevin_CS   ;
+; Chen_Kevin_Segment_G0 ; Chen_Kevin_CS ; 5.924 ; 5.924 ; Fall       ; Chen_Kevin_CS   ;
++-----------------------+---------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Progagation Delay                                                                 ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Input Port            ; Output Port           ; RR     ; RF     ; FR     ; FF     ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 12.682 ; 12.682 ; 12.682 ; 12.682 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 12.606 ; 12.606 ; 12.606 ; 12.606 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 12.594 ; 12.565 ; 12.565 ; 12.594 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 12.397 ; 12.397 ; 12.397 ; 12.397 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 12.348 ; 12.379 ; 12.379 ; 12.348 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 12.382 ; 12.414 ; 12.414 ; 12.382 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 12.361 ; 12.361 ; 12.361 ; 12.361 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 12.417 ; 12.417 ; 12.417 ; 12.417 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 12.343 ; 12.343 ; 12.343 ; 12.343 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 12.357 ; 12.325 ; 12.325 ; 12.357 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 12.132 ; 12.132 ; 12.132 ; 12.132 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 12.108 ; 12.124 ; 12.124 ; 12.108 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 12.159 ; 12.159 ; 12.159 ; 12.159 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 12.100 ; 12.100 ; 12.100 ; 12.100 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 12.408 ; 12.408 ; 12.408 ; 12.408 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 12.334 ; 12.334 ; 12.334 ; 12.334 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 12.348 ; 12.316 ; 12.316 ; 12.348 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 12.123 ; 12.123 ; 12.123 ; 12.123 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 12.099 ; 12.115 ; 12.115 ; 12.099 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 12.150 ; 12.150 ; 12.150 ; 12.150 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 12.091 ; 12.091 ; 12.091 ; 12.091 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 11.859 ; 11.859 ; 11.859 ; 11.859 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 11.785 ; 11.785 ; 11.785 ; 11.785 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 11.767 ; 11.799 ; 11.799 ; 11.767 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 11.574 ; 11.574 ; 11.574 ; 11.574 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 11.566 ; 11.550 ; 11.550 ; 11.566 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 11.601 ; 11.601 ; 11.601 ; 11.601 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 11.542 ; 11.542 ; 11.542 ; 11.542 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 12.532 ; 12.532 ; 12.532 ; 12.532 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 12.458 ; 12.458 ; 12.458 ; 12.458 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 12.440 ; 12.472 ; 12.472 ; 12.440 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 12.247 ; 12.247 ; 12.247 ; 12.247 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 12.239 ; 12.223 ; 12.223 ; 12.239 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 12.274 ; 12.274 ; 12.274 ; 12.274 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 12.215 ; 12.215 ; 12.215 ; 12.215 ;
++-----------------------+-----------------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------------------+
+; Minimum Progagation Delay                                                     ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Input Port            ; Output Port           ; RR    ; RF    ; FR    ; FF    ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_A0 ; 6.771 ; 6.771 ; 6.771 ; 6.771 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_B0 ; 6.714 ; 6.714 ; 6.714 ; 6.714 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_C0 ; 6.728 ; 6.728 ; 6.728 ; 6.728 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_D0 ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_E0 ; 6.618 ; 6.738 ; 6.738 ; 6.618 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_F0 ; 6.632 ; 6.632 ; 6.632 ; 6.632 ;
+; Chen_Kevin_OE         ; Chen_Kevin_Segment_G0 ; 6.604 ; 6.604 ; 6.604 ; 6.604 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_A0 ; 5.460 ; 5.460 ; 5.460 ; 5.460 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_B0 ; 5.403 ; 5.403 ; 5.403 ; 5.403 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_C0 ; 5.416 ; 5.480 ; 5.480 ; 5.416 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_D0 ; 5.320 ; 5.320 ; 5.320 ; 5.320 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_E0 ; 5.370 ; 5.318 ; 5.318 ; 5.370 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_F0 ; 5.332 ; 5.332 ; 5.332 ; 5.332 ;
+; Chen_Kevin_address[0] ; Chen_Kevin_Segment_G0 ; 5.301 ; 5.301 ; 5.301 ; 5.301 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_A0 ; 5.414 ; 5.414 ; 5.414 ; 5.414 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_B0 ; 5.357 ; 5.357 ; 5.357 ; 5.357 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_C0 ; 5.417 ; 5.370 ; 5.370 ; 5.417 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_D0 ; 5.274 ; 5.274 ; 5.274 ; 5.274 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_E0 ; 5.272 ; 5.307 ; 5.307 ; 5.272 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_F0 ; 5.286 ; 5.286 ; 5.286 ; 5.286 ;
+; Chen_Kevin_address[1] ; Chen_Kevin_Segment_G0 ; 5.255 ; 5.255 ; 5.255 ; 5.255 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_A0 ; 5.139 ; 5.139 ; 5.139 ; 5.139 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_B0 ; 5.082 ; 5.082 ; 5.082 ; 5.082 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_C0 ; 5.095 ; 5.159 ; 5.159 ; 5.095 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_D0 ; 4.999 ; 4.999 ; 4.999 ; 4.999 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_E0 ; 5.049 ; 4.997 ; 4.997 ; 5.049 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_F0 ; 5.011 ; 5.011 ; 5.011 ; 5.011 ;
+; Chen_Kevin_address[2] ; Chen_Kevin_Segment_G0 ; 4.980 ; 4.980 ; 4.980 ; 4.980 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_A0 ; 5.516 ; 5.516 ; 5.516 ; 5.516 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_B0 ; 5.459 ; 5.459 ; 5.459 ; 5.459 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_C0 ; 5.472 ; 5.551 ; 5.551 ; 5.472 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_D0 ; 5.376 ; 5.376 ; 5.376 ; 5.376 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_E0 ; 5.441 ; 5.374 ; 5.374 ; 5.441 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_F0 ; 5.388 ; 5.388 ; 5.388 ; 5.388 ;
+; Chen_Kevin_address[3] ; Chen_Kevin_Segment_G0 ; 5.357 ; 5.357 ; 5.357 ; 5.357 ;
++-----------------------+-----------------------+-------+-------+-------+-------+
+
+
++---------------------------------------------------------------------------+
+; Setup Transfers                                                           ;
++---------------+---------------+----------+----------+----------+----------+
+; From Clock    ; To Clock      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------+---------------+----------+----------+----------+----------+
+; Chen_Kevin_CS ; Chen_Kevin_CS ; 0        ; 0        ; 64       ; 0        ;
++---------------+---------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------+
+; Hold Transfers                                                            ;
++---------------+---------------+----------+----------+----------+----------+
+; From Clock    ; To Clock      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------+---------------+----------+----------+----------+----------+
+; Chen_Kevin_CS ; Chen_Kevin_CS ; 0        ; 0        ; 64       ; 0        ;
++---------------+---------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 106   ; 106  ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 490   ; 490  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Mar 05 22:38:24 2019
+Info: Command: quartus_sta Chen_Kevin_16x4SRAM -c Chen_Kevin_16x4SRAM
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 128 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Chen_Kevin_16x4SRAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Chen_Kevin_CS Chen_Kevin_CS
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.944
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.944       -48.035 Chen_Kevin_CS 
+Info (332146): Worst-case hold slack is 0.611
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.611         0.000 Chen_Kevin_CS 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 Chen_Kevin_CS 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.102
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.102        -1.219 Chen_Kevin_CS 
+Info (332146): Worst-case hold slack is 0.533
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.533         0.000 Chen_Kevin_CS 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 Chen_Kevin_CS 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4573 megabytes
+    Info: Processing ended: Tue Mar 05 22:38:26 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,1275 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -48 1544 136 1560)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "Chen_Kevin_WR" (rect 5 0 89 12)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -80 1520 96 1536)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "Chen_Kevin_IN" (rect 5 0 82 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -176 1496 40 1512)
+	(text "INPUT" (rect 173 0 201 10)(font "Arial" (font_size 6)))
+	(text "Chen_Kevin_dec[15..0]" (rect 5 0 121 12)(font "Arial" ))
+	(pt 216 8)
+	(drawing
+		(line (pt 132 12)(pt 157 12))
+		(line (pt 132 4)(pt 157 4))
+		(line (pt 161 8)(pt 216 8))
+		(line (pt 132 12)(pt 132 4))
+		(line (pt 157 4)(pt 161 8))
+		(line (pt 157 12)(pt 161 8))
+	)
+	(text "VCC" (rect 176 7 196 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 648 8 825 24)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Chen_Kevin_out" (rect 90 0 171 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 184 0 488 96)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 96 488 192)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 192 488 288)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 288 488 384)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 384 488 480)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 480 488 576)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 576 488 672)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 672 488 768)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 768 488 864)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst8" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 864 488 960)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst9" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 960 488 1056)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst10" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 1056 488 1152)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst11" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 1152 488 1248)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst12" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 1248 488 1344)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst13" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 1344 488 1440)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst14" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(symbol
+	(rect 184 1440 488 1536)
+	(text "Chen_Kevin_SRAM" (rect 5 0 115 14)(font "Arial" (font_size 8)))
+	(text "inst15" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Chen_Kevin_IN" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_IN" (rect 21 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Chen_Kevin_Select_Chip" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Select_Chip" (rect 21 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Chen_Kevin_Write_Enable" (rect 0 0 149 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_Write_Enable" (rect 21 59 170 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Chen_Kevin_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "Chen_Kevin_OUT" (rect 183 27 283 41)(font "Arial" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 80))
+	)
+)
+(connector
+	(pt 184 1472)
+	(pt 96 1472)
+)
+(connector
+	(pt 184 1408)
+	(pt 136 1408)
+)
+(connector
+	(pt 184 1376)
+	(pt 96 1376)
+)
+(connector
+	(pt 184 1504)
+	(pt 136 1504)
+)
+(connector
+	(pt 136 1504)
+	(pt 136 1552)
+)
+(connector
+	(pt 136 64)
+	(pt 184 64)
+)
+(connector
+	(pt 136 1408)
+	(pt 136 1504)
+)
+(connector
+	(pt 184 160)
+	(pt 136 160)
+)
+(connector
+	(pt 136 64)
+	(pt 136 160)
+)
+(connector
+	(pt 184 256)
+	(pt 136 256)
+)
+(connector
+	(pt 136 160)
+	(pt 136 256)
+)
+(connector
+	(pt 184 352)
+	(pt 136 352)
+)
+(connector
+	(pt 136 256)
+	(pt 136 352)
+)
+(connector
+	(pt 184 448)
+	(pt 136 448)
+)
+(connector
+	(pt 136 352)
+	(pt 136 448)
+)
+(connector
+	(pt 184 544)
+	(pt 136 544)
+)
+(connector
+	(pt 136 448)
+	(pt 136 544)
+)
+(connector
+	(pt 184 640)
+	(pt 136 640)
+)
+(connector
+	(pt 136 544)
+	(pt 136 640)
+)
+(connector
+	(pt 184 736)
+	(pt 136 736)
+)
+(connector
+	(pt 136 640)
+	(pt 136 736)
+)
+(connector
+	(pt 184 832)
+	(pt 136 832)
+)
+(connector
+	(pt 136 736)
+	(pt 136 832)
+)
+(connector
+	(pt 184 928)
+	(pt 136 928)
+)
+(connector
+	(pt 136 832)
+	(pt 136 928)
+)
+(connector
+	(pt 184 1024)
+	(pt 136 1024)
+)
+(connector
+	(pt 136 928)
+	(pt 136 1024)
+)
+(connector
+	(pt 184 1120)
+	(pt 136 1120)
+)
+(connector
+	(pt 136 1024)
+	(pt 136 1120)
+)
+(connector
+	(pt 184 1216)
+	(pt 136 1216)
+)
+(connector
+	(pt 136 1120)
+	(pt 136 1216)
+)
+(connector
+	(pt 184 1312)
+	(pt 136 1312)
+)
+(connector
+	(pt 136 1216)
+	(pt 136 1312)
+)
+(connector
+	(pt 136 1312)
+	(pt 136 1408)
+)
+(connector
+	(pt 96 1472)
+	(pt 96 1528)
+)
+(connector
+	(pt 96 32)
+	(pt 184 32)
+)
+(connector
+	(pt 96 1376)
+	(pt 96 1472)
+)
+(connector
+	(pt 184 128)
+	(pt 96 128)
+)
+(connector
+	(pt 96 32)
+	(pt 96 128)
+)
+(connector
+	(pt 184 224)
+	(pt 96 224)
+)
+(connector
+	(pt 96 128)
+	(pt 96 224)
+)
+(connector
+	(pt 184 320)
+	(pt 96 320)
+)
+(connector
+	(pt 96 224)
+	(pt 96 320)
+)
+(connector
+	(pt 184 416)
+	(pt 96 416)
+)
+(connector
+	(pt 96 320)
+	(pt 96 416)
+)
+(connector
+	(pt 184 512)
+	(pt 96 512)
+)
+(connector
+	(pt 96 416)
+	(pt 96 512)
+)
+(connector
+	(pt 184 608)
+	(pt 96 608)
+)
+(connector
+	(pt 96 512)
+	(pt 96 608)
+)
+(connector
+	(pt 184 704)
+	(pt 96 704)
+)
+(connector
+	(pt 96 608)
+	(pt 96 704)
+)
+(connector
+	(pt 184 800)
+	(pt 96 800)
+)
+(connector
+	(pt 96 704)
+	(pt 96 800)
+)
+(connector
+	(pt 184 896)
+	(pt 96 896)
+)
+(connector
+	(pt 96 800)
+	(pt 96 896)
+)
+(connector
+	(pt 184 992)
+	(pt 96 992)
+)
+(connector
+	(pt 96 896)
+	(pt 96 992)
+)
+(connector
+	(pt 184 1088)
+	(pt 96 1088)
+)
+(connector
+	(pt 96 992)
+	(pt 96 1088)
+)
+(connector
+	(pt 184 1184)
+	(pt 96 1184)
+)
+(connector
+	(pt 96 1088)
+	(pt 96 1184)
+)
+(connector
+	(pt 184 1280)
+	(pt 96 1280)
+)
+(connector
+	(pt 96 1184)
+	(pt 96 1280)
+)
+(connector
+	(pt 96 1280)
+	(pt 96 1376)
+)
+(connector
+	(pt 40 240)
+	(pt 40 144)
+	(bus)
+)
+(connector
+	(pt 40 336)
+	(pt 40 240)
+	(bus)
+)
+(connector
+	(pt 40 432)
+	(pt 40 336)
+	(bus)
+)
+(connector
+	(pt 40 528)
+	(pt 40 432)
+	(bus)
+)
+(connector
+	(pt 40 624)
+	(pt 40 528)
+	(bus)
+)
+(connector
+	(pt 40 720)
+	(pt 40 624)
+	(bus)
+)
+(connector
+	(pt 40 816)
+	(pt 40 720)
+	(bus)
+)
+(connector
+	(pt 40 912)
+	(pt 40 816)
+	(bus)
+)
+(connector
+	(pt 40 1008)
+	(pt 40 912)
+	(bus)
+)
+(connector
+	(pt 40 1104)
+	(pt 40 1008)
+	(bus)
+)
+(connector
+	(pt 40 1200)
+	(pt 40 1104)
+	(bus)
+)
+(connector
+	(pt 40 1296)
+	(pt 40 1200)
+	(bus)
+)
+(connector
+	(pt 40 1392)
+	(pt 40 1296)
+	(bus)
+)
+(connector
+	(pt 40 1504)
+	(pt 40 1488)
+	(bus)
+)
+(connector
+	(pt 40 1488)
+	(pt 40 1392)
+	(bus)
+)
+(connector
+	(pt 40 24)
+	(pt 40 48)
+	(bus)
+)
+(connector
+	(pt 40 48)
+	(pt 40 144)
+	(bus)
+)
+(connector
+	(text "Chen_Kevin_dec[0]" (rect 50 1472 146 1484)(font "Arial" ))
+	(pt 184 1488)
+	(pt 40 1488)
+)
+(connector
+	(text "Chen_Kevin_dec[1]" (rect 50 1376 146 1388)(font "Arial" ))
+	(pt 184 1392)
+	(pt 40 1392)
+)
+(connector
+	(text "Chen_Kevin_dec[2]" (rect 50 1280 146 1292)(font "Arial" ))
+	(pt 184 1296)
+	(pt 40 1296)
+)
+(connector
+	(text "Chen_Kevin_dec[3]" (rect 50 1184 146 1196)(font "Arial" ))
+	(pt 184 1200)
+	(pt 40 1200)
+)
+(connector
+	(text "Chen_Kevin_dec[4]" (rect 50 1088 146 1100)(font "Arial" ))
+	(pt 184 1104)
+	(pt 40 1104)
+)
+(connector
+	(text "Chen_Kevin_dec[5]" (rect 50 992 146 1004)(font "Arial" ))
+	(pt 184 1008)
+	(pt 40 1008)
+)
+(connector
+	(text "Chen_Kevin_dec[6]" (rect 50 896 146 908)(font "Arial" ))
+	(pt 184 912)
+	(pt 40 912)
+)
+(connector
+	(text "Chen_Kevin_dec[7]" (rect 50 800 146 812)(font "Arial" ))
+	(pt 184 816)
+	(pt 40 816)
+)
+(connector
+	(text "Chen_Kevin_dec[8]" (rect 50 704 146 716)(font "Arial" ))
+	(pt 184 720)
+	(pt 40 720)
+)
+(connector
+	(text "Chen_Kevin_dec[9]" (rect 50 608 146 620)(font "Arial" ))
+	(pt 184 624)
+	(pt 40 624)
+)
+(connector
+	(text "Chen_Kevin_dec[10]" (rect 50 512 152 524)(font "Arial" ))
+	(pt 184 528)
+	(pt 40 528)
+)
+(connector
+	(text "Chen_Kevin_dec[11]" (rect 50 416 152 428)(font "Arial" ))
+	(pt 184 432)
+	(pt 40 432)
+)
+(connector
+	(text "Chen_Kevin_dec[12]" (rect 50 320 152 332)(font "Arial" ))
+	(pt 184 336)
+	(pt 40 336)
+)
+(connector
+	(text "Chen_Kevin_dec[13]" (rect 50 224 152 236)(font "Arial" ))
+	(pt 184 240)
+	(pt 40 240)
+)
+(connector
+	(text "Chen_Kevin_dec[14]" (rect 50 128 152 140)(font "Arial" ))
+	(pt 184 144)
+	(pt 40 144)
+)
+(connector
+	(text "Chen_Kevin_dec[15]" (rect 50 32 152 44)(font "Arial" ))
+	(pt 184 48)
+	(pt 40 48)
+)
+(connector
+	(pt 488 1472)
+	(pt 584 1472)
+)
+(connector
+	(pt 584 16)
+	(pt 648 16)
+)
+(connector
+	(pt 488 32)
+	(pt 584 32)
+)
+(connector
+	(pt 584 32)
+	(pt 584 16)
+)
+(connector
+	(pt 488 128)
+	(pt 584 128)
+)
+(connector
+	(pt 584 32)
+	(pt 584 128)
+)
+(connector
+	(pt 488 224)
+	(pt 584 224)
+)
+(connector
+	(pt 584 224)
+	(pt 584 128)
+)
+(connector
+	(pt 488 320)
+	(pt 584 320)
+)
+(connector
+	(pt 584 320)
+	(pt 584 224)
+)
+(connector
+	(pt 488 416)
+	(pt 584 416)
+)
+(connector
+	(pt 584 320)
+	(pt 584 416)
+)
+(connector
+	(pt 488 512)
+	(pt 584 512)
+)
+(connector
+	(pt 584 416)
+	(pt 584 512)
+)
+(connector
+	(pt 488 608)
+	(pt 584 608)
+)
+(connector
+	(pt 584 512)
+	(pt 584 608)
+)
+(connector
+	(pt 488 704)
+	(pt 584 704)
+)
+(connector
+	(pt 584 608)
+	(pt 584 704)
+)
+(connector
+	(pt 488 800)
+	(pt 584 800)
+)
+(connector
+	(pt 584 704)
+	(pt 584 800)
+)
+(connector
+	(pt 488 896)
+	(pt 584 896)
+)
+(connector
+	(pt 584 800)
+	(pt 584 896)
+)
+(connector
+	(pt 488 992)
+	(pt 584 992)
+)
+(connector
+	(pt 584 896)
+	(pt 584 992)
+)
+(connector
+	(pt 488 1088)
+	(pt 584 1088)
+)
+(connector
+	(pt 584 992)
+	(pt 584 1088)
+)
+(connector
+	(pt 488 1184)
+	(pt 584 1184)
+)
+(connector
+	(pt 584 1088)
+	(pt 584 1184)
+)
+(connector
+	(pt 488 1280)
+	(pt 584 1280)
+)
+(connector
+	(pt 584 1184)
+	(pt 584 1280)
+)
+(connector
+	(pt 488 1376)
+	(pt 584 1376)
+)
+(connector
+	(pt 584 1280)
+	(pt 584 1376)
+)
+(connector
+	(pt 584 1376)
+	(pt 584 1472)
+)
+(junction (pt 136 1504))
+(junction (pt 136 1408))
+(junction (pt 136 160))
+(junction (pt 136 256))
+(junction (pt 136 352))
+(junction (pt 136 448))
+(junction (pt 136 544))
+(junction (pt 136 640))
+(junction (pt 136 736))
+(junction (pt 136 832))
+(junction (pt 136 928))
+(junction (pt 136 1024))
+(junction (pt 136 1120))
+(junction (pt 136 1216))
+(junction (pt 136 1312))
+(junction (pt 96 1472))
+(junction (pt 96 1376))
+(junction (pt 96 128))
+(junction (pt 96 224))
+(junction (pt 96 320))
+(junction (pt 96 416))
+(junction (pt 96 512))
+(junction (pt 96 608))
+(junction (pt 96 704))
+(junction (pt 96 800))
+(junction (pt 96 896))
+(junction (pt 96 992))
+(junction (pt 96 1088))
+(junction (pt 96 1184))
+(junction (pt 96 1280))
+(junction (pt 40 144))
+(junction (pt 40 240))
+(junction (pt 40 336))
+(junction (pt 40 432))
+(junction (pt 40 528))
+(junction (pt 40 624))
+(junction (pt 40 720))
+(junction (pt 40 816))
+(junction (pt 40 912))
+(junction (pt 40 1008))
+(junction (pt 40 1104))
+(junction (pt 40 1200))
+(junction (pt 40 1296))
+(junction (pt 40 1392))
+(junction (pt 40 1488))
+(junction (pt 40 48))
+(junction (pt 584 32))
+(junction (pt 584 128))
+(junction (pt 584 224))
+(junction (pt 584 320))
+(junction (pt 584 416))
+(junction (pt 584 512))
+(junction (pt 584 608))
+(junction (pt 584 704))
+(junction (pt 584 800))
+(junction (pt 584 896))
+(junction (pt 584 992))
+(junction (pt 584 1088))
+(junction (pt 584 1184))
+(junction (pt 584 1280))
+(junction (pt 584 1376))
